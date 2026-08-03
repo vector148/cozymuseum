@@ -221,7 +221,7 @@ if (command === "migrate") {
   });
   const reportPath = resolve(root, option(
     "--report",
-    `reports/observation-curation/offset-${offset}-limit-${limit}-${apply ? "apply" : "preview"}.json`,
+    `.scratch/reports/observation-curation/offset-${offset}-limit-${limit}-${apply ? "apply" : "preview"}.json`,
   ));
   writeAtomically(reportPath, Buffer.from(`${JSON.stringify({
     command,
