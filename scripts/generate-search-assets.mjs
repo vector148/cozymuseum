@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const defaultSiteUrl = "https://cozymuseum.vercel.app/";
+const defaultSiteUrl = "https://cozymuseum.gg/";
 
 export function normalizeSiteUrl(value = defaultSiteUrl) {
   const withProtocol = /^https?:\/\//i.test(String(value)) ? String(value) : `https://${value}`;
